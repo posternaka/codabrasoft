@@ -7,59 +7,72 @@
     <title>fff</title>
 </head>
 <body>
-    <div class="root">
-
-        <form action="">
-            <label for="firstname"></label>
-            <input
-                type="text"
-                class="inputFields"
-                id="firstname"
-                name="firstname"
-                placeholder="First Name"
-            />
-            <label for="lastname"></label>
-            <input
-                type="text"
-                class="inputFields"
-                id="lastname"
-                name="lastname"
-                placeholder="Last Name"
-            />
-            <label for="birthday"></label>
-            <input
-                type="date"
-                class="inputFields"
-                id="birthday"
-                name="birthday"
-                placeholder="Birthday"
-            />
-            <label for="email"></label>
-            <input
-                type="email"
-                class="inputFields"
-                id="email"
-                name="email"
-                placeholder="Email"
-            />
-            <label for="password"></label>
-            <input
-                type="password"
-                class="inputFields"
-                id="password"
-                name="password"
-                placeholder="Password"
-            />
-            <label for="checkPassword"></label>
-            <input
-                type="password"
-                class="inputFields"
-                id="checkPassword"
-                name="checkPassword"
-                placeholder="Repeat password"
-            />
+ 
+        <form onsubmit="handleSubmit">
+            <div class="field field__firstname">
+                <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="First Name"
+                />
+                <label id="label_firstname" class="field__prompt" for="firstname">Required field</label>
+            </div>
+            <div class="field field__lastname">
+                <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Last Name"
+                />
+                <label id="label_lastname" class="field__prompt" for="lastname">Required field</label>
+            </div>
+            <div class="field field__date">
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                />
+                <label id="label_date" class="field__prompt" for="date">Required field</label>
+            </div>
+            <div class="field field__email">
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                />
+                <label id="label_email" class="field__prompt" for="email">Required field</label>
+            </div>
+            <div class="field field__password"> 
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                />
+                <label id="label_password" class="field__prompt" for="password">Required field</label>
+            </div>
+            <div class="field field__password"> 
+                <input
+                    type="password"
+                    id="checkPassword"
+                    name="checkPassword"
+                    placeholder="Repeat password"
+                />
+                <label id="label_checkPassword" class="field__prompt" for="checkPassword">Required field</label>
+            </div>
+            <div class="field field__password">
+                <input
+                    type="submit"
+                    class="inputFields"
+                    id="submit"
+                    name="submit"
+                    placeholder="Repeat password"
+                    value="Send"
+                >
+            </div>
         </form>
 
-    </div>
 </body>
 </html>
